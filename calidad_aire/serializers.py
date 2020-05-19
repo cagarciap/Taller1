@@ -4,4 +4,4 @@ from .models import calidad_aire
 class Calidad_aireSerializer(serializers.ModelSerializer):
     class Meta:
         model = calidad_aire
-        fields = ('id', 'type', 'value','codigo','latitud','longitud','producto','area')
+        fields = ('id','codigo','latitud','longitud','producto','area')

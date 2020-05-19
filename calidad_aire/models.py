@@ -3,8 +3,6 @@ import uuid
 
 class calidad_aire(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    type = models.CharField(verbose_name='Tipo', max_length=20)
-    value = models.IntegerField(verbose_name='Valor')
     codigo = models.CharField(max_length=20, verbose_name='Codigo', default="x")
     latitud = models.FloatField(verbose_name='Latitud', default=0)
     longitud = models.FloatField(verbose_name='Longitud', default=0)
